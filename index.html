@@ -210,6 +210,53 @@ body {
 }
 @keyframes glow { 50% { opacity: 1; } }
 @keyframes fly { to { transform: translate(var(--x), var(--y)); } }
+
+/* 📱 AJUSTE PARA CELULAR (5 ORQUÍDEAS VISIBLES) */
+@media (max-width: 768px) {
+
+  .orchid {
+    width: 180px;
+    height: 520px;
+  }
+
+  .o1 {
+    left: 50%;
+    transform: translateX(-50%) scale(0.85);
+    z-index: 20;
+  }
+
+  .o2 {
+    left: 10%;
+    transform: scale(0.65);
+    z-index: 15;
+  }
+
+  .o3 {
+    right: 10%;
+    transform: scale(0.65);
+    z-index: 15;
+  }
+
+  .o4 {
+    left: -5%;
+    transform: scale(0.55);
+    z-index: 10;
+  }
+
+  .o5 {
+    right: -5%;
+    transform: scale(0.55);
+    z-index: 10;
+  }
+
+  .dedication .title {
+    font-size: 40px;
+  }
+
+  .dedication .phrase {
+    font-size: 24px;
+  }
+}
 </style>
 </head>
 
